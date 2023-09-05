@@ -1,0 +1,13 @@
+.gamingButton, .gamingButton2, .gamingButton3 {
+    height: 6vh;
+    width: 6vw;
+    font-weight: bolder;
+}
+
+.OnGamingButton, .OnGamingButton2, .OnGamingButton3 {
+    height: 6vh;
+    width: 6vw;
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+}
