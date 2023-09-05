@@ -32,3 +32,22 @@ function gaming3() {
     gamingVariable3.classList.add('OnGamingButton3');
     }
 }
+
+let switchButtonVariable = document.querySelector('.on-off');
+function switchMode() {
+    if (switchButtonVariable.innerHTML === 'On') {
+        switchButtonVariable.innerHTML = 'Off';
+    }
+    else {
+        switchButtonVariable.innerHTML = 'On'; 
+    }
+}
+    
+function switchClass() { 
+    if (switchButtonVariable.classList.contains('offClass')) {
+            switchButtonVariable.classList.remove('offClass')
+        }
+    else {
+        switchButtonVariable.classList.add('offClass');
+        }
+}
