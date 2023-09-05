@@ -2,6 +2,7 @@
     height: 6vh;
     width: 6vw;
     font-weight: bolder;
+    cursor: pointer;
 }
 
 .OnGamingButton, .OnGamingButton2, .OnGamingButton3 {
@@ -10,4 +11,5 @@
     font-weight: bolder;
     background-color: black;
     color: white;
+    cursor: pointer;
 }
