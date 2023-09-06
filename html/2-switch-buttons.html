@@ -1,0 +1,53 @@
+<html>
+<body>
+
+<head>
+<title>Active Button</title>
+
+<style>
+
+.but1, .but2 {
+height: 40px;
+width: 70px;
+cursor: pointer;
+}
+
+.activeButton {
+height: 40px;
+width: 70px;
+cursor: pointer;
+background-color: black;
+color: white;
+font-weight: bold;
+}
+
+</style>
+</head>
+
+<p>Choose 1 Task</p>
+
+<button class="but1" onclick="
+setActiveButton();
+">Gaming</button>
+
+<button class="but2" onclick="
+setActiveButton();
+">Studying</button>
+
+<script>
+let but1Variable = document.querySelector('.but1');
+let but2Variable = document.querySelector('.but2');
+
+function setActiveButton() {
+if (but1Variable.classList.contains('activeButton')) {
+  but2Variable.classList.add('activeButton');
+  but1Variable.classList.remove('activeButton');
+ }
+else {
+  but1Variable.classList.add('activeButton');
+  but2Variable.classList.remove('activeButton');
+ }
+}
+</script>
+</body>
+</html>
