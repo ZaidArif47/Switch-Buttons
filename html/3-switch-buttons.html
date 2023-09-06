@@ -1,0 +1,59 @@
+<html>
+<body>
+
+<head>
+<title>Active Button</title>
+
+<style>
+
+.butclass {
+height: 40px;
+width: 70px;
+cursor: pointer;
+}
+
+.activeButton {
+height: 40px;
+width: 70px;
+cursor: pointer;
+background-color: black;
+color: white;
+font-weight: bold;
+}
+
+</style>
+</head>
+
+<p>Choose 1 Task</p>
+
+<button class="butclass" onclick="
+setActiveButton(this)
+">Gaming</button>
+
+<button class="butclass" onclick="
+setActiveButton(this);
+">Studying</button>
+
+<button class="butclass" onclick="
+setActiveButton(this);
+">Sleeping</button>
+
+<script>
+let activeButton = null;
+
+function setActiveButton(button) {
+ if (activeButton) {
+// Remove the "active" class from the previously active button (if any)
+  activeButton.classList.remove('activeButton');
+ }
+
+//sets the clicked button as the active one
+activeButton = button;
+
+//add the activeButton class to style the button accordingly
+activeButton.classList.add('activeButton'); 
+}
+
+</script>
+</body>
+</html>
